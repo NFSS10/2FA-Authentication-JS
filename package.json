@@ -1,0 +1,35 @@
+{
+    "name": "@nfss10/2fa-auth",
+    "version": "0.0.1",
+    "description": "2FA Auth tools",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint .",
+        "lint-fix": "eslint . --fix",
+        "prettier": "prettier --write \"**/*.+(js|jsx|json|md)\"",
+        "pretty": "npm run prettier && npm run lint-fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/NFSS10/2FA-Authentication"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
+    "keywords": [
+        "2fa"
+    ],
+    "author": "NFSS10",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.16.5",
+        "@babel/eslint-parser": "^7.16.5",
+        "eslint": "^8.4.1",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-mocha": "^10.0.3",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^5.2.0",
+        "prettier": "^2.5.1"
+    }
+}
