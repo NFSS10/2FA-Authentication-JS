@@ -29,9 +29,9 @@ console.log("TOTP code:", totpCode); // Logs: "TOTP code: 373275"
 getHotpCode(secret, counter, digits);
 ```
 
-- `secret` - Base32 encoded secret key
-- `counter` - counter value, default is 1
-- `digits` - (optional) number of digits of the resulting code, default is 6
+-   `secret` - Base32 encoded secret key
+-   `counter` - counter value, default is 1
+-   `digits` - (optional) number of digits of the resulting code, default is 6
 
 #### TOTP code generator
 
@@ -39,10 +39,10 @@ getHotpCode(secret, counter, digits);
 getTotpCode(secret, timestampMS, digits, interval);
 ```
 
-- `secret` - Base32 encoded secret key
-- `timestampMS` - (optional) Timestamp in milliseconds
-- `digits` - (optional) number of digits of the resulting code, default is 6
-- `interval` - (optional) Interval window in seconds for the code, default is 30
+-   `secret` - Base32 encoded secret key
+-   `timestampMS` - (optional) Timestamp in milliseconds
+-   `digits` - (optional) number of digits of the resulting code, default is 6
+-   `interval` - (optional) Interval window in seconds for the code, default is 30
 
 ## Tests
 
