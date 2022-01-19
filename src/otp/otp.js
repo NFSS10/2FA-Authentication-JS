@@ -1,12 +1,6 @@
 const Crypto = require("crypto");
 const Utils = require("../utils");
 
-const hello = msg => {
-    const str = "" + msg;
-    console.log(str);
-    return str;
-};
-
 const getHotpCode = (secret, counter = 1, digits = 6) => {
     if (counter < 1) throw new Error("Counter must be greater than or equal to one.");
     if (digits < 6) throw new Error("Digits must be greater than or equal to six.");
@@ -39,6 +33,5 @@ const getHotpCode = (secret, counter = 1, digits = 6) => {
 };
 
 module.exports = {
-    hello: hello,
     getHotpCode: getHotpCode
 };

@@ -1,11 +1,6 @@
 const auth2fa = require("../..");
 
 describe("OTP", () => {
-    it("Hello", () => {
-        const str = auth2fa.OTP.hello("test str");
-        expect(str).toEqual("test str");
-    });
-
     it("getHotpCode", () => {
         let str = auth2fa.OTP.getHotpCode("JBSWY3DPEHPK3PXP", 1);
         expect(str).toEqual("996554");
