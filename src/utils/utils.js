@@ -52,6 +52,16 @@ const base32toHex = data => {
     return res;
 };
 
+const hexToBytes = hex => {
+    const bytes = [];
+    for (let i = 0; i < hex.length; i += 2) {
+        const byteStr = `${hex[i]}${hex[i + 1]}`;
+        bytes.push(parseInt(byteStr, 16));
+    }
+    return bytes;
+};
+
 module.exports = {
-    base32toHex: base32toHex
+    base32toHex: base32toHex,
+    hexToBytes: hexToBytes
 };
