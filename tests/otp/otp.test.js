@@ -25,9 +25,6 @@ describe("OTP", () => {
         let code = auth2fa.OTP.getTotpCode("JBSWY3DPEHPK3PXP", 1642626525779);
         expect(code).toEqual("373275");
 
-        code = auth2fa.OTP.getTotpCode("JBSWY3DPEHPK3PXP", 1642626525779);
-        expect(code).toEqual("373275");
-
         code = auth2fa.OTP.getTotpCode("JBSWY3DPEHPK3PXP", 1642626554470);
         expect(code).toEqual("546517");
 
