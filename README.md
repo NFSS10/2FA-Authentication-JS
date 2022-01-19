@@ -49,3 +49,7 @@ getTotpCode(secret, timestampMS, digits, interval);
 ```shell
 npm tests
 ```
+
+## License
+
+[Apache License 2.0](LICENSE)
