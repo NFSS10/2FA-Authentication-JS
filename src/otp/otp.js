@@ -32,6 +32,16 @@ const getHotpCode = (secret, counter = 1, digits = 6) => {
     return code;
 };
 
+const getTotpCode = (secret, timestampMS, digits, interval = 30) => {
+    let timestamp = timestampMS || Date.now();
+    timestamp = Math.floor(timestamp / 1000);
+    timestamp = Math.floor(timestamp / interval);
+
+    const code = getHotpCode(secret, timestamp, digits);
+    return code;
+};
+
 module.exports = {
-    getHotpCode: getHotpCode
+    getHotpCode: getHotpCode,
+    getTotpCode: getTotpCode
 };
