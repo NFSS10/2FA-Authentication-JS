@@ -30,8 +30,8 @@ getHotpCode(secret, counter, digits);
 ```
 
 -   `secret` - Base32 encoded secret key
--   `counter` - counter value, default is 1
--   `digits` - (optional) number of digits of the resulting code, default is 6
+-   `counter` - Counter value, default is 1
+-   `digits` - (optional) Number of digits of the resulting code, default is 6
 
 #### TOTP code generator
 
@@ -41,7 +41,7 @@ getTotpCode(secret, timestampMS, digits, interval);
 
 -   `secret` - Base32 encoded secret key
 -   `timestampMS` - (optional) Timestamp in milliseconds
--   `digits` - (optional) number of digits of the resulting code, default is 6
+-   `digits` - (optional) Number of digits of the resulting code, default is 6
 -   `interval` - (optional) Interval window in seconds for the code, default is 30
 
 ## Tests
