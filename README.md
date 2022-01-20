@@ -47,7 +47,7 @@ getTotpCode(secret, timestampMS, digits, interval);
 ## Tests
 
 ```shell
-npm tests
+npm test
 ```
 
 ## License
