@@ -23,6 +23,24 @@ const totpCode = nfss10Auth.OTP.getTotpCode(base32Secret, timestampMS);
 console.log("TOTP code:", totpCode); // Logs: "TOTP code: 373275"
 ```
 
+You can also use in it your browser by loading the bundle file:
+
+```html
+<script src="2fa-auth.js"></script>
+<script>
+    const auth2fa = window.auth2fa;
+
+    const base32Secret = "JBSWY3DPEHPK3PXP";
+    const counter = 5;
+    const hotpCode = auth2fa.OTP.getHotpCode(base32Secret, counter);
+    console.log("HOTP code:", hotpCode); // Logs: "HOTP code: 768897"
+
+    const timestampMS = 1642626525779;
+    const totpCode = auth2fa.OTP.getTotpCode(base32Secret, timestampMS);
+    console.log("TOTP code:", totpCode); // Logs: "TOTP code: 373275"
+</script>
+```
+
 #### HOTP code generator
 
 ```js
