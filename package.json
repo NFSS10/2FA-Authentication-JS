@@ -4,6 +4,7 @@
     "description": "2FA Auth tools",
     "main": "index.js",
     "scripts": {
+        "build-bundle": "browserify wrapper.js -o ./dist/2fa-auth.js",
         "lint": "eslint .",
         "lint-fix": "eslint . --fix",
         "prettier": "prettier --write \"**/*.+(js|jsx|json|md)\"",
